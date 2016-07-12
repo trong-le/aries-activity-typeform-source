@@ -9,3 +9,10 @@ test('proper configuration', t => {
 	t.equal(TypeFormSource.props.version, require('../package.json').version);
 	t.end();
 });
+
+test('test api', async t => {
+    const activity = new TypeFormSource();
+    const data = await activity.getTypeformData(config);
+    const questionAnswersArray = activity.getResponses(data);
+});
+
