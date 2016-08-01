@@ -1,6 +1,6 @@
 import test from 'blue-tape';
 import TypeFormSource from '../lib/index.js';
-import { config } from './test.config';
+import config from './test-config';
 import fs from 'fs';
 
 test('proper configuration', t => {
