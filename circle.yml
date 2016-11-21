@@ -7,7 +7,7 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build --rm=false -t astronomerio/typeform-transform .
+    - docker build --rm=false -t astronomerio/typeform-source .
 
 deployment:
   production:
