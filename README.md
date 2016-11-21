@@ -1,3 +1,5 @@
+![alt text](/img/logo.jpeg "Aries Integration for Typeform")
+
 #Aries Integration for [Typeform](https://www.typeform.com/help/data-api/)
 
 [![Build Status][ci-badge]][ci-link]
@@ -5,10 +7,10 @@
 Typeform is a web-based platform where users can create online forms. Users will then be able to monitor and track answers associated with each form.
 
 ##Methods
-This integration has one method that can be called:
+This integration has one method that is called by default.
 
 ###1) Get Typeform Data
-Returns the question and responses of the given UID, or unique identifier, of the typeform or all typeforms. Returned format will be an array of objects. Each object are questions/answer pairs for each user
+`getTypeformData` - Returns the question and responses of the given UID, or unique identifier, of the typeform or all typeforms. Returned format will be an array of objects. Each object are questions/answer pairs for each user
 
 
 ##Configuration
