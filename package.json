@@ -4,7 +4,7 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node -r babel-register -r babel-polyfill -r dotenv/config test/test.js | faucet",
+    "test": "node -r babel-register -r babel-polyfill test/test.js | faucet",
     "tail": "tail -f app.log | bunyan -o short",
     "build-image": "docker build --no-cache -t astronomerio/typeform-source ."
   },
@@ -20,7 +20,6 @@
     "babel-register": "^6.8.0",
     "blue-tape": "^0.2.0",
     "bunyan": "^1.8.0",
-    "dotenv": "^2.0.0",
     "faucet": "0.0.1",
     "nock": "^7.0.2"
   },
