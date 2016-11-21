@@ -1,5 +1,7 @@
 #Aries Integration for [Typeform](https://www.typeform.com/help/data-api/)
 
+[![Build Status][ci-badge]][ci-link]
+
 Typeform is a web-based platform where users can create online forms. Users will then be able to monitor and track answers associated with each form.
 
 ##Methods
@@ -177,3 +179,6 @@ This is an example response when a query is made with only the 'completed = true
   ]
 }
 ```
+
+[ci-link]: https://circleci.com/gh/aries-data/aries-activity-typeform-source
+[ci-badge]: https://circleci.com/gh/aries-data/aries-activity-typeform-source.svg?style=svg
