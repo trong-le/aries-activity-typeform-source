@@ -4,11 +4,6 @@ machine:
   services:
     - docker
 
-dependencies:
-  override:
-    - docker info
-    - docker build --rm=false -t astronomerio/typeform-source .
-
 deployment:
   production:
     tag: /v[0-9]+(\.[0-9]+)*/
@@ -19,6 +14,5 @@ deployment:
   staging:
     branch: master
     commands:
-      - docker build --rm=false -t astronomerio/typeform-source:master .
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker push astronomerio/typeform-source:master
