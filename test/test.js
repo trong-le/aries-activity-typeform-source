@@ -14,3 +14,4 @@ test('test api', async t => {
     const data = await activity.getTypeformData(config);
     const questionAnswersArray = activity.getResponses(data);
 });
+
